@@ -1,0 +1,18 @@
+.header {
+  background: var(--purple);
+  border-bottom: 2px solid var(--dark-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-space {
+  height: 76px;
+  width: 100%;
+  margin-bottom: 15px;
+}

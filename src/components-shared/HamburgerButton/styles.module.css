@@ -1,0 +1,145 @@
+.hamburgerButton {
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  position: relative;
+  z-index: 101;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.hamburgerButton span {
+  background: #ffffff;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hamburgerButton span:first-child {
+  display: block;
+  position: absolute;
+  top: 5px;
+}
+
+.hamburgerButton span:nth-child(2) {
+  bottom: 15px;
+}
+
+.hamburgerButton span:last-child {
+  bottom: 5px;
+}
+
+/* Burger Close */
+.isNotToggled span:first-child {
+  animation: smashDownReverse 0.5s 1 forwards;
+}
+
+.isNotToggled span:nth-child(2) {
+  animation: burgerVomit 0.25s 1 forwards;
+}
+
+.isNotToggled span:last-child {
+  animation: smashUpReverse 0.5s 1 forwards;
+}
+
+.isToggled span:first-child {
+  animation: smashDown 0.5s 1 forwards;
+}
+
+.isToggled span:nth-child(2) {
+  animation: burgerEaten 0.25s 1 forwards;
+}
+
+.isToggled span:last-child {
+  animation: smashUp 0.5s 1 forwards;
+}
+
+@keyframes smashDown {
+  0% {
+    top: 5px;
+  }
+
+  50% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burgerEaten {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes smashUp {
+  0% {
+    bottom: 5px;
+  }
+
+  50% {
+    bottom: 15px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: 15px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes smashDownReverse {
+  0% {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 15px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes burgerVomit {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smashUpReverse {
+  0% {
+    bottom: 15px;
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    bottom: 15px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: 5px;
+  }
+}

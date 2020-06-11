@@ -1,0 +1,24 @@
+.cardTitle {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formWrapper {
+  padding: 0 5px;
+}
+
+.formWrapper > label {
+  margin-bottom: 15px;
+}
+
+.submitButton {
+  margin-bottom: 5px;
+  margin-top: 35px;
+}
+
+.errorMessage {
+  color: var(--red-ours);
+  font-size: 12px;
+  margin-bottom: 80px;
+  min-height: 15px;
+}
