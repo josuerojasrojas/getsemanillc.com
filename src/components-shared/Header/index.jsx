@@ -7,6 +7,7 @@ import logoSrc from "assets/circle.svg";
 import { Link } from "react-router-dom";
 import HamburgerButton from "components-shared/HamburgerButton";
 import Sidebar from "components-shared/Sidebar";
+import wave1 from "assets/wave-layer-1.svg";
 
 const Header = ({ className, _routes }) => {
   const [toggle, setToggle] = useState(false);
@@ -14,6 +15,9 @@ const Header = ({ className, _routes }) => {
   return (
     <>
       <div className={classNames(className, styles.header)}>
+        <div className={classNames(styles.layer, styles.layer3)}></div>
+        <div className={classNames(styles.layer, styles.layer2)}></div>
+        <div className={classNames(styles.layer, styles.layer1)}></div>
         <Sidebar routes={_routes} toggle={toggle} setToggle={setToggle} />
         <Link to="/">
           <Logo imageSrc={logoSrc} />

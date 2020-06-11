@@ -1,5 +1,5 @@
 .sidebar {
-  background: var(--dark-purple);
+  background-color: var(--dark-green);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   font-size: 2rem;
   max-height: 100vh;
@@ -17,12 +17,13 @@
 }
 
 .sidebar a {
+  color: white;
   display: block;
   position: relative;
 }
 
 .active::after {
-  border-left: var(--green-ours) solid 4px;
+  border-left: var(--brand-red) solid 4px;
   content: "";
   height: 100%;
   left: 0;

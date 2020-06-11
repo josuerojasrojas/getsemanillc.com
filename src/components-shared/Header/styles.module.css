@@ -16,3 +16,25 @@
   width: 100%;
   margin-bottom: 15px;
 }
+
+.layer {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.layer1 {
+  background-color: var(--dark-green);
+  height: calc(100% - 10px);
+}
+
+.layer2 {
+  background-color: var(--reg-green);
+  height: calc(100% + 10px);
+}
+
+.layer3 {
+  background-color: var(--light-green);
+  height: calc(100% + 20px);
+}
