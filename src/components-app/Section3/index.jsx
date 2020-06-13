@@ -29,12 +29,12 @@ const columns = [
 const Section3 = ({ className }) => {
   return (
     <div className={classNames(styles.section3, className)}>
-      {columns.map((col) => (
-        <div className={styles.column}>
+      {columns.map((col, i) => (
+        <div key={col.text + i} className={styles.column}>
           <div className={styles.imgWrapper}>
             <div class={styles.gradient}></div>
             <div
-              class={styles.image}
+              className={styles.image}
               style={{ backgroundImage: `url(${col.image})` }}
             ></div>
           </div>
