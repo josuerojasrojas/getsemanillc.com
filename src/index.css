@@ -34,7 +34,7 @@ body {
 }
 
 a {
-  color: var(--green-ours);
+  /* color: var(--green-ours); */
   text-decoration: none;
   transition: opacity 200ms;
 }

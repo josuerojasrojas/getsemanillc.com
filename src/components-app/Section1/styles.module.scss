@@ -1,0 +1,47 @@
+@import "../../mixins.scss";
+
+.Section1 {
+  column-gap: 30px;
+
+  margin-bottom: 60px;
+
+  @include medium-devices {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 15px));
+    text-align: left;
+  }
+
+  .column {
+    margin-bottom: 10px;
+
+    @include medium-devices {
+      margin-bottom: 0px;
+      min-height: 230px;
+      padding: 0 0 0 15px;
+    }
+  }
+
+  .title {
+    &::after {
+      background-color: var(--brand-red);
+      content: "";
+      display: block;
+      height: 7px;
+      margin: auto;
+      width: 35%;
+      @include medium-devices {
+        margin: 10px auto auto 0;
+      }
+    }
+  }
+
+  .picture {
+    // -webkit-mask: url("../../assets/blob.svg") 50% 50% no-repeat;
+    background-image: url("../../assets/option_4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mask-size: cover;
+    min-height: 230px;
+  }
+}

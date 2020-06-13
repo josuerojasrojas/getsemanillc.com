@@ -1,6 +1,6 @@
 .hamburgerButton {
   cursor: pointer;
-  height: 34px;
+  height: 32px;
   width: 34px;
   position: relative;
   z-index: 101;
@@ -14,8 +14,8 @@
 }
 
 .hamburgerButton span {
-  background: #ffffff;
-  height: 4px;
+  background: black;
+  height: 2px;
   left: 0;
   position: absolute;
   transition: 0.5s;

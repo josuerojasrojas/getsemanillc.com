@@ -1,6 +1,7 @@
 .header {
-  background: var(--purple);
-  border-bottom: 2px solid var(--dark-gray);
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +10,9 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  .name {
+    font-weight: bold;
+  }
 }
 
 .header-space {
