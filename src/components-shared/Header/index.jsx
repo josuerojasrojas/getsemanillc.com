@@ -11,7 +11,6 @@ const Header = ({ className, _routes }) => {
   return (
     <>
       <div className={classNames(className, styles.header)}>
-        <Sidebar routes={_routes} toggle={toggle} setToggle={setToggle} />
         <span className={styles.name}>GETSEMANI</span>
         <HamburgerButton
           toggle={toggle}
@@ -19,6 +18,7 @@ const Header = ({ className, _routes }) => {
             setToggle(!toggle);
           }}
         />
+        <Sidebar routes={_routes} toggle={toggle} setToggle={setToggle} />
       </div>
       <div className={styles["header-space"]}></div>
     </>

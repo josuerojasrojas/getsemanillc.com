@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const Sidebar = ({ routes, toggle, setToggle }) => {
   useEffect(
