@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .hamburgerButton {
   cursor: pointer;
   height: 32px;
@@ -11,6 +13,9 @@
   -ms-user-select: none;
   /* IE 10+ */
   user-select: none;
+  @include medium-devices {
+    display: none;
+  }
 }
 
 .hamburgerButton span {

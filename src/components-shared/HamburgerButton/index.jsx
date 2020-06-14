@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import styles from "./styles.module.css";
+import styles from "./styles.module.scss";
 
 const HamburgerButton = ({ toggle, onClick }) => {
   const [isRender, setIsRender] = useState(false);
