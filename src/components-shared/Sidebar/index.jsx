@@ -21,6 +21,14 @@ const Sidebar = ({ routes, toggle, setToggle }) => {
     [setToggle] //useEffect dependency to reinitiate itself.
   );
 
+  const TriggeHash = (path) => {
+    // (josue): might be a bad idea to have a timer;
+    window.location.hash = Date.now();
+    setTimeout(() => {
+      window.location = path;
+    }, 0);
+  };
+
   return (
     <div
       id="main-sidemenu"
@@ -33,7 +41,7 @@ const Sidebar = ({ routes, toggle, setToggle }) => {
           route.sidebar ? (
             <li key={index}>
               {route.isExternal ? (
-                <a href={route.path} target="_blank" rel="noopener noreferrer">
+                <a onClick={() => TriggeHash(route.path)} href={route.path}>
                   {route.name}
                 </a>
               ) : (
