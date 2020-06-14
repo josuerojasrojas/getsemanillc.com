@@ -26,13 +26,13 @@ const columns = [
   },
 ];
 
-const Section3 = ({ className }) => {
+const Section3 = React.forwardRef(({ className }, ref) => {
   return (
-    <div className={classNames(styles.section3, className)}>
+    <div className={classNames(styles.section3, className)} ref={ref}>
       {columns.map((col, i) => (
         <div key={col.text + i} className={styles.column}>
           <div className={styles.imgWrapper}>
-            <div class={styles.gradient}></div>
+            <div className={styles.gradient}></div>
             <div
               className={styles.image}
               style={{ backgroundImage: `url(${col.image})` }}
@@ -44,6 +44,6 @@ const Section3 = ({ className }) => {
       ))}
     </div>
   );
-};
+});
 
 export default Section3;

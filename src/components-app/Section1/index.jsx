@@ -6,9 +6,9 @@ const title = "Getsemani Lanscaping";
 const infoText =
   "some text that will appear hear, maybe a description describing something. or a quick message, idk..";
 
-const Section1 = ({ className }) => {
+const Section1 = React.forwardRef(({ className }, ref) => {
   return (
-    <div className={classNames(styles.Section1, className)}>
+    <div className={classNames(styles.Section1, className)} ref={ref}>
       <div className={styles.column}>
         <h1 className={styles.title}>{title}</h1>
         <p>{infoText}</p>
@@ -16,6 +16,6 @@ const Section1 = ({ className }) => {
       <div className={classNames(styles.column, styles.picture)}></div>
     </div>
   );
-};
+});
 
 export default Section1;
