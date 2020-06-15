@@ -8,10 +8,24 @@ import Sidebar from "components-shared/Sidebar";
 const Header = ({ className, _routes }) => {
   const [toggle, setToggle] = useState(false);
 
+  const TriggeHash = (path) => {
+    // (josue): might be a bad idea to have a timer;
+    window.location.hash = Date.now();
+    setTimeout(() => {
+      window.location = path;
+    }, 0);
+  };
+
   return (
     <>
       <div className={classNames(className, styles.header)}>
-        <span className={styles.name}>GETSEMANI</span>
+        <a
+          className={styles.name}
+          onClick={() => TriggeHash("/#section1")}
+          href="/#section1"
+        >
+          GETSEMANI
+        </a>
         <HamburgerButton
           toggle={toggle}
           onClick={() => {

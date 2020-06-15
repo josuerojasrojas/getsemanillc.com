@@ -29,6 +29,14 @@ const routes = (isAuthenticated) => [
     isExternal: true,
     main: () => <HomePage isAuthenticated={isAuthenticated} />,
   },
+  {
+    name: "Contact",
+    sidebar: isAuthenticated,
+    path: "/#section4",
+    exact: true,
+    isExternal: true,
+    main: () => <HomePage isAuthenticated={isAuthenticated} />,
+  },
 ];
 
 // all routes go here
