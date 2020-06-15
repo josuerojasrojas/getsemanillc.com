@@ -9,7 +9,7 @@ const title = "Contact Us";
 const textInfo = "There are many ways to contact us.";
 const socialMediaLinks = [
   {
-    link: "https://instagram.com/getsemaniland",
+    link: "https://instagram.com/getsemanilands?igshid=17lwxfkynz5eb",
     icon: instagram,
   },
   {
