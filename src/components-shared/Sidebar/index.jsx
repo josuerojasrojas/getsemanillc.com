@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import Button from "components-shared/Button";
 import classNames from "classnames";
 import styles from "./styles.module.scss";
 
@@ -40,19 +40,22 @@ const Sidebar = ({ routes, toggle, setToggle }) => {
         {routes.map((route, index) =>
           route.sidebar ? (
             <li key={index}>
-              {route.isExternal ? (
-                <a onClick={() => TriggeHash(route.path)} href={route.path}>
-                  {route.name}
-                </a>
-              ) : (
-                <NavLink
-                  to={route.path}
-                  exact
-                  key={index}
-                  activeClassName={styles.active}
+              {route.isButton ? (
+                <Button
+                  isLink
+                  onClick={() => TriggeHash(route.path)}
+                  href={route.path}
                 >
                   {route.name}
-                </NavLink>
+                </Button>
+              ) : (
+                <a
+                  className={styles.link}
+                  onClick={() => TriggeHash(route.path)}
+                  href={route.path}
+                >
+                  {route.name}
+                </a>
               )}
             </li>
           ) : (

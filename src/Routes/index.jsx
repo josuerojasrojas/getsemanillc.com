@@ -34,6 +34,7 @@ const routes = (isAuthenticated) => [
     name: "Contact",
     sidebar: isAuthenticated,
     path: "/#section4",
+    isButton: true,
     exact: true,
     isExternal: true,
     main: () => <HomePage isAuthenticated={isAuthenticated} />,
