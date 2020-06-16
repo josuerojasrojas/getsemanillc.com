@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from "Routes/HomePage";
 import Header from "components-shared/Header";
+import Footer from "components-shared/Footer";
 import styles from "./styles.module.css";
 
 // Routes Array
@@ -33,6 +34,7 @@ const routes = (isAuthenticated) => [
     name: "Contact",
     sidebar: isAuthenticated,
     path: "/#section4",
+    isButton: true,
     exact: true,
     isExternal: true,
     main: () => <HomePage isAuthenticated={isAuthenticated} />,
@@ -48,6 +50,7 @@ const Routes = () => {
       <div className={styles.page}>
         <HomePage isAuthenticated />
       </div>
+      <Footer />
     </>
   );
 };

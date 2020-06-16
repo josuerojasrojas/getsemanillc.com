@@ -37,18 +37,19 @@
     right: initial;
     top: initial;
     ul {
+      align-items: center;
       display: flex;
       justify-content: flex-end;
     }
     li {
       margin-bottom: 0;
-      margin-left: 10px;
+      margin-left: 25px;
       padding: 0;
     }
   }
 }
 
-.sidebar a {
+.sidebar .link {
   color: black;
   display: block;
   position: relative;
