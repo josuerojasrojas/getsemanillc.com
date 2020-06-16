@@ -13,11 +13,11 @@ const socialMediaLinks = [
     icon: instagram,
   },
   {
-    link: "#phone",
+    link: "tel:9172801907",
     icon: phoneImage,
   },
   {
-    link: "#email",
+    link: "mailto:getsemanilands@gmail.com",
     icon: mailImage,
   },
 ];

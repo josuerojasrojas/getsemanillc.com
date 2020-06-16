@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from "Routes/HomePage";
 import Header from "components-shared/Header";
+import Footer from "components-shared/Footer";
 import styles from "./styles.module.css";
 
 // Routes Array
@@ -48,6 +49,7 @@ const Routes = () => {
       <div className={styles.page}>
         <HomePage isAuthenticated />
       </div>
+      <Footer />
     </>
   );
 };
