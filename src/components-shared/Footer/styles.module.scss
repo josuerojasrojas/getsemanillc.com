@@ -12,7 +12,7 @@
   position: absolute;
   top: -150px;
 
-  @include large-devices {
+  @include extra-large-devices {
     height: initial;
     min-height: 300px;
     min-width: 100%;

@@ -1,0 +1,26 @@
+.input {
+  background-color: rgb(247, 249, 251);
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 10px;
+
+  &:focus {
+    box-shadow: rgba(67, 90, 111, 0.137255) 0px 0px 2px inset,
+      rgb(87, 154, 217) 0px 0px 0px 1px inset,
+      rgba(16, 112, 202, 0.137255) 0px 0px 0px 3px;
+    outline-style: none;
+    outline-width: 0px;
+  }
+
+  &.invalid {
+    box-shadow: rgb(236, 76, 71) 0px 0px 0px 1px inset,
+      rgba(67, 90, 111, 0.137255) 0px 1px 2px inset;
+  }
+
+  &:disabled {
+    background-color: rgb(245, 246, 247);
+    cursor: not-allowed;
+  }
+}

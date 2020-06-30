@@ -7,21 +7,33 @@ import image3 from "assets/option_0.png";
 
 const columns = [
   {
-    title: "Invoicing & Payments",
+    title: "Landscaping Maintenance",
     text:
-      "Some text about this column, quick and short prefereably. I can't spell but the idea is there.",
+      "Professional landscaping is vital to your business success or private property value. We maintain the appearance of your property so you don't have to sacrifice more time out of your busy life. ",
     image: image1,
   },
   {
-    title: "Peoples & Contracts",
+    title: "Snow & Ice Management",
     text:
-      "Some text about this column, quick and short prefereably. I can't spell but the idea is there.",
+      "Snow management and ice control services performed by E-Landscaping snow fighters who follow a decade-long strategy of safety, quality and value.",
     image: image2,
   },
   {
-    title: "Tracking & Reports",
+    title: "Fertilization & Pest Management",
     text:
-      "Some text about this column, quick and short prefereably. I can't spell but the idea is there.",
+      "Our lawn care experts examine your lawn to create a unique fertilization & weed control plan customized to your lawn's exact needs.",
+    image: image3,
+  },
+  {
+    title: "Hardscaping & Design",
+    text:
+      "We build retaining walls, patios, and walk ways. Using only the highest quality materials available on the market and our best workmanship, everything we build is guaranteed to last.",
+    image: image3,
+  },
+  {
+    title: "Plant Installation",
+    text:
+      "Our Plant Installation displays a spectacular variety of annuals, perennials, shrubs, trees and garden ornaments. We take pride in being smooth, efficient on time, and clean on our plant delivery and plant installations",
     image: image3,
   },
 ];

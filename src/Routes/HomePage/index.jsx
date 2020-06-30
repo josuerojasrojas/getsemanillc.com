@@ -3,10 +3,12 @@ import styles from "./styles.module.scss";
 import Section1 from "components-app/Section1";
 import Section2 from "components-app/Section2";
 import Section3 from "components-app/Section3";
+import ContactSection from "components-app/ContactSection";
 import Section4 from "../../components-app/Section4";
 
 const HomePage = () => {
   const sections = {
+    "#contact": useRef(null),
     "#section1": useRef(null),
     "#section2": useRef(null),
     "#section3": useRef(null),
@@ -32,22 +34,11 @@ const HomePage = () => {
 
   return (
     <div className={styles.home}>
-      <Section1
-        ref={sections["#section1"]}
-        className={styles.section}
-      ></Section1>
-      <Section2
-        ref={sections["#section2"]}
-        className={styles.section}
-      ></Section2>
-      <Section3
-        ref={sections["#section3"]}
-        className={styles.section}
-      ></Section3>
-      <Section4
-        ref={sections["#section4"]}
-        className={styles.section}
-      ></Section4>
+      <ContactSection ref={sections["#contact"]} className={styles.section} />
+      <Section1 ref={sections["#section1"]} className={styles.section} />
+      <Section2 ref={sections["#section2"]} className={styles.section} />
+      <Section3 ref={sections["#section3"]} className={styles.section} />
+      <Section4 ref={sections["#section4"]} className={styles.section} />
     </div>
   );
 };

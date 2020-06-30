@@ -7,9 +7,9 @@ import styles from "./styles.module.css";
 // Routes Array
 const routes = (isAuthenticated) => [
   {
-    name: "Section 1",
+    name: "Contact",
     sidebar: true,
-    path: "/#section1",
+    path: "/#contact",
     exact: true,
     isExternal: true,
     main: () => <HomePage isAuthenticated={isAuthenticated} />,
@@ -34,7 +34,7 @@ const routes = (isAuthenticated) => [
     name: "Contact",
     sidebar: isAuthenticated,
     path: "/#section4",
-    isButton: true,
+    // isButton: true,
     exact: true,
     isExternal: true,
     main: () => <HomePage isAuthenticated={isAuthenticated} />,
